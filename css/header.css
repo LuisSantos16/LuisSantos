@@ -15,7 +15,7 @@ header{
     width: 100%;
 }
 
-#lista-barid, .fa-bars{
+#lista-barid{
     display: none;
 }
 
@@ -126,15 +126,20 @@ button a{
         padding: 20px;
     }
 
+    nav a:hover{
+        background-color: rgb(32, 109, 252);
+        color: white;
+    }
+
     .lista-open{
         left: 100;
         transition: 1s;
     }
 
     #listaid{
-        background: rgb(19, 51, 77);
+        background: rgb(34, 39, 61);
         position: absolute;
-        top: 90px;
+        top: 80px;
         width: 80%;
     }
 
