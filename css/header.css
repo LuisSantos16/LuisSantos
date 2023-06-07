@@ -15,9 +15,7 @@ header{
     width: 100%;
 }
 
-#lista-barid, .fa-bars{
-    display: none;
-}
+#lista-barid, .fa-bars{display: none;}
 
 span{
     color: white;
@@ -69,13 +67,9 @@ figcaption h1{
     text-shadow: 0 0 10px rgba(4, 52, 92, 0.397), 0 0 10px rgba(255, 255, 255, 0.219), 0 0 10px rgba(255, 255, 255, 0.205), 0 0 10px rgba(255, 255, 255, 0.226);
 }
 
-figcaption p{
-    font-size: 30px;
-}
+figcaption p{font-size: 30px;}
 
-figcaption b{
-    color: rgb(42, 158, 253);
-}
+figcaption b{color: rgb(42, 158, 253);}
 
 button{
     border: white 4px solid;
@@ -122,9 +116,7 @@ button a{
         flex-direction: column;
     }
 
-    nav a{
-        padding: 20px;
-    }
+    nav a{padding: 20px;}
 
     nav a:hover{
         background-color: rgb(32, 109, 252);
@@ -148,6 +140,8 @@ button a{
         font-size: 22px;
     }
 
+    figcaption h2{letter-spacing: 2px;}
+
 }
 
 @media only screen and (max-width:900px){
@@ -158,9 +152,7 @@ button a{
 }
 
 @media only screen and (max-width:850px){
-    header{
-        padding: 0px 100px; 
-    }
+    header{padding: 0px 100px;}
 
     figcaption{
         width: 90%;
@@ -169,42 +161,35 @@ button a{
 }
 
 @media only screen and (max-width:650px){
-    header{
-        padding: 0px 50px; 
-    }
+    header{padding: 0px 50px;}
 
-    span{
-        font-size: 25px;
-    }
+    span{font-size: 25px;}
 
-    figcaption h1{
-        font-size: 30px;
-    }
+    figcaption h1{font-size: 30px;}
 
-    figcaption p{
-        font-size: 20px;
-    }
+    figcaption p{font-size: 20px;}
 }
 
 @media only screen and (max-width:450px){
-    header{
-        padding: 0px 20px; 
-    }
+    header{padding: 0px 20px;}
 
-    figcaption h1{
-        font-size: 25px;
-    }
+    nav a{font-size: 15px;}
 
-    figcaption p{
+    .fa-bars{
         font-size: 15px;
+        margin: 0;
     }
+
+    span{font-size: 18px;}
+
+    figcaption h1{font-size: 25px;}
+
+    figcaption p{font-size: 15px;}
 
     button{
         padding: 10px;
         border: 2px solid white;
     }
 
-    button a{
-        font-size: 15px;
-    }
+    button a{font-size: 15px;}
 }
