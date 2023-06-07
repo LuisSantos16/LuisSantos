@@ -6,3 +6,19 @@ function llamar(){
     let listabar=document.getElementById("lista-bar");
     listabar.querySelector("lista-bar .listabar").classList.toggle;
 }
+
+//scroll
+
+window.addEventListener("scroll",Scroll);
+function Scroll(){
+    let header=document.getElementById("header");
+    let posy=window.pageYOffset;
+    if (posy>100){
+        header.style.background="rgb(34, 39, 61)";
+        header.style.transition="0.5s"
+    }
+    else{
+        header.style.background="none";
+        header.style.transition="0.5s"
+    }
+}

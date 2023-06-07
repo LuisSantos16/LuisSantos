@@ -7,16 +7,17 @@
 
 header{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 80px;
     position: fixed;
     z-index: 4;
     width: 100%;
 }
 
-#lista-barid{display: none;}
+#lista-barid, .fa-bars{
+    display: none;
+}
 
 span{
     color: white;
