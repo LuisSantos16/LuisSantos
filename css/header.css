@@ -15,7 +15,7 @@ header{
     width: 100%;
 }
 
-#lista-barid{
+#lista-barid, .fa-bars{
     display: none;
 }
 
@@ -105,7 +105,7 @@ button a{
         padding: 0px 150px; 
     }
 
-    #lista-barid{
+    #lista-barid, .fa-bars{
         display: block;
         float: right;
         font-size: 30px;
