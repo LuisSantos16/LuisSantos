@@ -16,6 +16,8 @@ header{
     width: 100%;
 }
 
+#lista-barid{display: none;}
+
 span{
     color: white;
     font-size: 35px;
@@ -93,4 +95,110 @@ button a{
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+@media only screen and (max-width:1180px){
+
+    header{
+        justify-content: space-between;
+        padding: 0px 150px; 
+    }
+
+    #lista-barid{
+        display: block;
+        float: right;
+        font-size: 30px;
+        margin: 30px;
+        color: white;
+    }
+
+    nav{
+        float: none;
+        position: relative;
+        left: -120%;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a{
+        padding: 20px;
+    }
+
+    .lista-open{
+        left: 100;
+        transition: 1s;
+    }
+
+    #listaid{
+        background: rgb(19, 51, 77);
+        position: absolute;
+        top: 90px;
+        width: 80%;
+    }
+
+    .fa-bars{
+        color: white;
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width:900px){
+    
+    #listaid{width: 100%;}
+
+    .lista-open{left: 0%;}
+}
+
+@media only screen and (max-width:850px){
+    header{
+        padding: 0px 100px; 
+    }
+
+    figcaption{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:650px){
+    header{
+        padding: 0px 50px; 
+    }
+
+    span{
+        font-size: 25px;
+    }
+
+    figcaption h1{
+        font-size: 30px;
+    }
+
+    figcaption p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    header{
+        padding: 0px 20px; 
+    }
+
+    figcaption h1{
+        font-size: 25px;
+    }
+
+    figcaption p{
+        font-size: 15px;
+    }
+
+    button{
+        padding: 10px;
+        border: 2px solid white;
+    }
+
+    button a{
+        font-size: 15px;
+    }
 }
