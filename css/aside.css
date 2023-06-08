@@ -1,0 +1,98 @@
+aside{
+    background-color: rgb(33, 45, 65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+aside figure{
+    background: none;
+    width: 450px;
+    padding: 50px;
+}
+
+aside figure img{
+    width: 100%;
+    border: 6px solid rgb(50, 84, 116);
+}
+
+aside blockquote{
+    width: 450px;
+    color: white;
+    padding: 50px 0px;
+}
+
+aside blockquote h2{
+    text-align: center;
+    border-bottom: 4px solid gray;
+    width: 130px;
+    font-size: 30px;
+}
+
+aside blockquote p{
+    line-height: 35px;
+    text-align: justify;
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+aside blockquote button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+aside blockquote button a{
+    color: rgb(10, 21, 53);
+    font-size: 16px;
+}
+
+aside blockquote button:hover a{
+    color: white;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1100px){
+    aside{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside blockquote{
+        width: 80%;
+    }
+
+    aside blockquote h2{
+        margin: auto;
+    }
+
+    aside blockquote button{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    aside figure{
+        width: 100%;
+        padding: 35px;
+    }
+}
+
+@media only screen and (max-width:410px){
+    
+    aside blockquote{width: 90%;}
+
+    aside blockquote h2{
+        font-size: 20px;
+        width: 100px;
+    }
+
+    aside blockquote p{
+        font-size: 15px;
+        padding: 15;
+        margin: 0;
+    }
+
+    aside blockquote button{width: 80%;}
+}
