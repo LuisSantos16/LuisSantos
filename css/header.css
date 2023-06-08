@@ -15,7 +15,10 @@ header{
     width: 100%;
 }
 
-#lista-barid, .fa-bars{display: none;}
+.fa-bars{
+    display: none;
+    font-size: 0px;
+}
 
 span{
     color: white;
