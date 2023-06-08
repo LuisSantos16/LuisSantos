@@ -1,0 +1,230 @@
+/* especialidades */
+
+.fondo_1{
+    background-color: rgb(31, 46, 77);
+}
+
+.fondo_2{
+    background-color: rgb(22, 31, 46);
+}
+
+.section_specialty{
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section_specialty h2{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.specialty{
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 41, 70);
+    margin-bottom: 20px;
+    padding: 20px 40px 60px 40px;
+    transition: 0.5s;
+}
+
+.specialty:hover{
+    box-shadow: 2px 2px 20px black, 2px 2px 20px black, 2px 2px 20px black;
+    transition: 0.5s;
+}
+
+hr{
+    width: 30%;
+    margin: auto;
+}
+
+.fa-pager, .fa-warehouse, .fa-windows, .fa-boxes-stacked, .fa-chrome , .fa-google{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 50%;
+}
+
+.specialty ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 20px;
+}
+
+.specialty h3{
+    padding: 20px 0px;
+}
+
+.specialty p{
+    line-height: 25px;
+}
+
+/* proyectos */
+
+.section_project{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.section_project h2{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.project{
+    width: 400px;
+    margin: 10px 0px;
+    border: 3px black solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.project img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.project img:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.overlay_project{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.699);
+    top: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: 0.5s ease-out;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+ .project:hover .overlay_project{
+    transform: translateY(70%);
+    transition: 0.5s;
+}
+
+/* contacto - formulario */
+
+.contact{
+    background: linear-gradient(rgba(0, 0, 1, 0.877),rgba(0, 0, 1, 0.774),rgba(0, 0, 1, 0.774)), url(../img/contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+    background-color: rgba(15, 42, 68, 0.349);
+    padding: 50px;
+}
+
+form h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 15px 10px;
+    background-color: inherit;
+    color: white;
+    border: 1px white solid;
+}
+
+textarea{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: inherit;
+    border: 1px white solid;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(37, 52, 83);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(42, 62, 104);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: white;
+}
+
+@media only screen and (max-width:1180px){
+    form{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .specialty{width: 60%;}
+    .project{width: 80%;}
+}
+
+@media only screen and (max-width:750px){
+    form{width: 95%;}
+}
+
+@media only screen and (max-width:650px){
+    .specialty{width: 90%;}
+}
+
+@media only screen and (max-width:450px){
+    .section_specialty h2, .section_project h2, .contact h2{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .project{width: 90%;}
+
+    form{
+        padding: 20px 10px;
+    }
+
+    input[type="submit"]{
+        width: 60%;
+    }
+}
