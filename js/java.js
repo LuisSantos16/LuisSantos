@@ -22,3 +22,18 @@ function Scroll(){
         header.style.transition="0.5s"
     }
 }
+
+//Boton Subir
+window.addEventListener('scroll', Subir);
+    function Subir(){
+var subir=document.getElementById("subir");
+var npos=window.pageYOffset;
+        if (npos>300){
+            subir.style.display="block";
+            subir.style.transition="0.5s";
+        }
+        else{
+            subir.style.display="none";
+            subir.style.transition="0.5s";
+        }
+    }
