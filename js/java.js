@@ -18,7 +18,7 @@ function Scroll(){
         header.style.transition="0.5s"
     }
     else{
-        header.style.background="none";
+        header.style.background="rgba(0, 0, 0, 0.397)";
         header.style.transition="0.5s"
     }
 }

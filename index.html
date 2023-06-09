@@ -22,6 +22,8 @@
 </head>
 <body>
 
+    <div id="inicio"></div>
+
     <header id="header">
         <span>Luis Santos</span>
 
@@ -29,15 +31,14 @@
             <i class="listabar fa-solid fa-bars"></i>
         </div>
 
-        <nav id="listaid">
-            <a href="">INICIO</a>
-            <a href="">SOBRE MI</a>
-            <a href="">ESPECIALIDADES</a>
-            <a href="">PORTAFOLIO</a>
-            <a href="">CONTACTO</a>
+        <nav class="menu" id="listaid">
+            <a href="#inicio">INICIO</a>
+            <a href="#sobremi">SOBRE MI</a>
+            <a href="#especialidad">ESPECIALIDADES</a>
+            <a href="#portafolio">PORTAFOLIO</a>
+            <a href="#contacto">CONTACTO</a>
         </nav>
     </header>
-
 
     <figure>
         <figcaption>
@@ -46,11 +47,12 @@
             <P>Me gusta la tecnologia</P>
             
             <button>
-                <a href="#">Ir a portafolio</a>
+                <a href="#portafolio">Ir a portafolio</a>
             </button>
         </figcaption>
     </figure>
 
+    <div id="sobremi"></div>
     <aside>
         <figure>
             <img src="./img/luis.jpg" alt="">
@@ -66,6 +68,7 @@
     </aside>
 
     <main>
+        <div id="especialidad"></div>
         <section class="fondo_1 section_specialty">
 
             <h2>Mis Especialidades</h2>
@@ -151,8 +154,8 @@
             </article>
         </section>
 
-        <section class="fondo_2 section_project">
-
+        <div id="portafolio"></div>
+        <section class="fondo_2 section_project">    
             <h2>Mis Proyectos</h2>
 
             <article class="project">
@@ -220,6 +223,7 @@
             </article>
         </section>
 
+        <div id="contacto"></div>
         <section class="contact">
             <form action="">
                 <h2>Contactame</h2>
@@ -235,14 +239,13 @@
 
     <footer class="fondo_2">
         <span>Todos los derechos reservados &copy; Luis M. Santos Rivera</span>
-        <blockquote>
-            <ul>
-                <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
-                <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
-                <li><a href=""></a><i class="fa-brands fa-github"></i></li>
-                <li><a href=""></a><i class="fa-brands fa-linkedin"></i></li>
-            </ul>
-        </blockquote>
+
+        <nav class="social">
+            <a href="https://www.facebook.com/profile.php?id=100081109827203" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/luis.sants/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/LuisSantos16" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/luis-miguel-santos-rivera-020a6a24b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>    
     </footer>
 
     
